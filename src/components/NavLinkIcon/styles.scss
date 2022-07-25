@@ -1,0 +1,75 @@
+.sideNav-container {
+  @apply relative w-20 flex justify-center;
+
+  .boxEffect {
+    @apply bg-background h-12 absolute right-0 z-[-1] rounded-l-3xl;
+  }
+
+  .boxAnimation {
+    animation-name: grow;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .reverseBorder:before {
+    content: "";
+    position: absolute;
+
+    background-color: transparent;
+    right: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 25px;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0 -25px 0 0 #F8F8F8;
+    animation-name: grow-border;
+    animation-duration: 0.2s;
+  }
+
+  .reverseBorder:after {
+    content: "";
+    position: absolute;
+
+    background-color: transparent;
+    right: 0;
+    top: -50px;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0 25px 0 0 #F8F8F8;
+    animation-name: grow-border;
+    animation-duration: 0.2s;
+  }
+
+  @keyframes grow {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 85%
+    }
+  }
+
+  @keyframes grow-border {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 25px;
+    }
+  }
+}
+
+.icon-md {
+  @apply w-6 h-6;
+}
+
+.icon-lg {
+  @apply w-8 h-8;
+}
+
+.flip-x {
+  transform: scaleX(-1);
+}
