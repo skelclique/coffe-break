@@ -1,0 +1,31 @@
+.loginContainer {
+  @apply flex flex-col h-screen items-center justify-center bg-blue;
+
+  .loginApp-container {
+    @apply flex flex-col items-center w-full max-w-xs gap-5;
+
+    img {
+      @apply mb-5;
+    }
+
+    .separatorLine {
+      @apply flex items-center text-white w-full justify-between text-sm my-2;
+    }
+
+    .separatorLine:before {
+      content: '';
+      height: 1px;
+      flex: 1 1;
+      margin-right: 1rem;
+      background: #fff;
+    }
+    
+    .separatorLine:after {
+      content: '';
+      height: 1px;
+      margin-left: 1rem;
+      flex: 1 1;
+      background: #fff;
+    }
+  }
+}
