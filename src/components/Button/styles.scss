@@ -1,0 +1,9 @@
+.buttonContainer {
+  @apply text-blue bg-green w-full py-3 px-10 rounded-lg font-medium
+  flex items-center justify-center hover:bg-blue hover:text-green hover:ring-2
+hover:ring-green transition-colors; 
+
+  .buttonIcon {
+    @apply text-blue mr-1;
+  }
+}
