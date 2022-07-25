@@ -1,0 +1,12 @@
+.homeContainer {
+  @apply bg-background;
+
+  .homeApp-container {
+    @apply flex h-screen w-screen p-10;
+  }
+
+  .sideBar-container {
+    @apply flex flex-col items-center w-20 gap-6 py-6 pt-20 
+    rounded-3xl bg-blue relative z-20;
+  }
+}
